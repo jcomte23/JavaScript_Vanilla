@@ -34,7 +34,7 @@ Si tienes preguntas o comentarios sobre el proyecto, puedes contactar a Javier C
 
 Este proyecto se encuentra actualmente en desarrollo activo y se esperan actualizaciones en un futuro cercano.
 
-## License
+## Licencia
 
 Este proyecto está bajo la [MIT License](LICENSE) - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
