@@ -5,7 +5,7 @@ Explora el mundo de JavaScript desde la consola hasta el backend con Node.js. De
 
 1. **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/jcomte23/Christmas_Countdown.git
+    git clone https://github.com/jcomte23/JavaScript_Vanilla.git
     ```
     Clona el repositorio, preferiblemente a través de claves de seguridad SSH o también puedes usar el método HTTPS.
 
@@ -13,7 +13,7 @@ Explora el mundo de JavaScript desde la consola hasta el backend con Node.js. De
 
 2. **Navegar al Directorio del Proyecto:**
     ```bash
-    cd Christmas_Countdown
+    cd JavaScript_Vanilla
     ```
 
 3. **Abrir ArchivoJs.js:**
