@@ -17,7 +17,7 @@ Explora el mundo de JavaScript desde la consola hasta el backend con Node.js. De
     ```
 
 3. **Abrir ArchivoJs.js:**
-    - Como es JavaScript vanilla lo puedes correr en el navegador o en backend mediante NodeJs.
+    - Como es JavaScript vanilla lo puedes correr cualquier archivo individual en el navegador o en backend mediante NodeJs.
     
 ## Autor
 
