@@ -102,33 +102,33 @@ console.log(Math.cbrt(2)) // 1.2599....
 
 // obtener numeros random de manera basica
 let x = Math.random()
-console.log(x)
-console.log(x=x*5)
-console.log(Math.floor(x))
-console.log(Math.floor(Math.random()*5))
-console.log(~~(Math.random()*5))
+console.log(x) // numero aleatorio con 0.decimales
+console.log(x=x*5) // numero aleatorio con muchos decimales
+console.log(Math.floor(x)) // genera un numero aleatorio
+console.log(Math.floor(Math.random()*5)) // genera un numero aleatorio
+console.log(~~(Math.random()*5)) // genera un numero aleatorio
 
 // obtener numero random con un rango establecido (sup-inferior+1)+ inferior
-console.log(Math.floor(Math.random()*(30-10+1)+10))
+console.log(Math.floor(Math.random()*(30-10+1)+10)) // genera un numero aletorio entre 30 y 10
 
 // redondero natural
-console.log(Math.round(3.75))
-console.log(Math.round(3.24))
+console.log(Math.round(3.75)) // 4
+console.log(Math.round(3.24)) // 3
 
 // redondero superior
-console.log(Math.ceil(3.12))
-console.log(Math.ceil(3.21))
+console.log(Math.ceil(3.12)) // 4
+console.log(Math.ceil(3.21)) // 4
 
 // redondero inferior
-console.log(Math.floor(3.99))
-console.log(Math.floor(3.98))
+console.log(Math.floor(3.99)) // 3
+console.log(Math.floor(3.98)) // 3
 
 // redondeo con precision
-console.log(Math.round(3.1236748579))
-console.log(Math.fround(3.1236748579))
+console.log(Math.round(3.1236748579)) // 3
+console.log(Math.fround(3.1236748579)) // 3.1236...
 
 // truncado solo la parte entera
-console.log(Math.trunc(3.75))
-console.log(Math.round(3.75))
-console.log(Math.round(-3.75))
-console.log(Math.trunc(-3.75))
+console.log(Math.trunc(3.75)) // 3
+console.log(Math.round(3.75)) // 4
+console.log(Math.round(-3.75)) // -4
+console.log(Math.trunc(-3.75)) // -3
