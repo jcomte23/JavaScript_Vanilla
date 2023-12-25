@@ -1,6 +1,6 @@
-// ######################
+// ####################
 // TIPOS DE DATOS EN JS
-// ######################
+// ####################
 
 const var1 = 2
 const var2 = "2"
@@ -119,51 +119,3 @@ console.log(estatura >= 1.71 || typeof estatura == "number")
 let variable = true
 console.log(variable) // true
 console.log(!variable) // false
-
-
-    // #######################
-    // OPERADORES DE TERNARIOS
-    // #######################
-    ; (estatura <= 1.65)
-        ? console.log("Es una persona bajita")
-        : (estatura >= 1.66 && estatura <= 1.75)
-            ? console.log("Es una persona dentro del promedio")
-            : console.log("Es una persona alta")
-if (estatura <= 1.65) {
-    console.log("Es una persona bajita")
-} else {
-    if (estatura >= 1.66 && estatura <= 1.75) {
-        console.log("Es una persona dentro del promedio")
-    } else {
-        console.log("Es una persona alta")
-    }
-}
-
-//IF normal
-if (estatura > 1.90) {
-    console.log("Eres una persona muy alta");
-}
-
-//IF ternario
-estatura > 1.90 ? console.log("Eres una persona muy alta") : null
-
-//EJEMPLO FINAL
-const CODER = "Ana"
-const EDAD_CODER = 26
-const CIUDAD = "Medellin"
-const SECTOR = "Palmas"
-const EXISTE_METRO = true
-const HORA_DESPERTAR = 6
-let coder_despierto = true
-
-if (CODER == "Ana" && (CIUDAD == "Medellin" || SECTOR == "Palmas")) {
-    if (coder_despierto)
-        (HORA_DESPERTAR <= 5)
-            ? console.log("Ana tiene tiempo") : console.log("Ana esta apurada de tiempo");
-
-    (HORA_DESPERTAR > 5 || EXISTE_METRO == false)
-        ? console.log("Ana debe tomar un UBER")
-        : console.log("Ana viaja en metro como siempre lo hace");
-} else {
-    console.log("El coder no esta registrado");
-}
