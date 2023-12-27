@@ -6,6 +6,7 @@ const mensaje1 = "soy un"
 const mensaje2 = String("hola")
 const mensaje3 = new String("mundo")
 
+
 // ######################################
 // EXTRACCION DE INFORMACION DE UN STRING
 // ######################################
@@ -80,6 +81,26 @@ console.log(cadenaPrueba2.replaceAll("mundo", "javier")); // hola javier, es un 
 const planta = "Eucalipto es una gran planta"
 console.log(planta.replace(/[aeou]/g, 'i')) // 'Eicilipti is ini grin plinti'
 
+// Repetir un string
+const cadenaPrueba8 = "Riwi "
+console.log(cadenaPrueba8.repeat(2)) // 'Riwi Riwi'
+console.log(cadenaPrueba8.repeat(4)) // 'Riwi Riwi Riwi Riwi'
+
+// limpiar espacios accidentales
+const textoDePrueba2 = "   Este es un mensaje de prueba   "
+console.log(textoDePrueba2.trim()); // "Este es un mensaje de prueba"
+console.log(textoDePrueba2.trimStart()); // "Este es un mensaje de prueba   "
+console.log(textoDePrueba2.trimEnd()); // "   Este es un mensaje de prueba"
+
+// relleno de texto para ajustar un formato especifico
+const textoDePrueba3 = "123"
+console.log(textoDePrueba3.padStart(10, "*")) // '*******123'
+console.log(textoDePrueba3.padStart(8, "*")) // '*****123'
+console.log(textoDePrueba3.padStart(5, "*")) // '**123'
+console.log(textoDePrueba3.padEnd(10, "*")) // '123*******'
+console.log(textoDePrueba3.padEnd(8, "*")) // '123*****'
+console.log(textoDePrueba3.padEnd(5, "*")) // '123**'
+
 
 // ####################
 // FRAGMENTAR UN STRING
@@ -111,28 +132,3 @@ console.log(cadenaPrueba7.split(".")) // [ '88', '12', '44', '124' ]
 // Dividir un texto en partes con expresion regular
 const saldoCuenta="445.788.414,24"
 console.log(saldoCuenta.split(/[.,]/)) // [ '445', '788', '414', '24' ]
-
-
-// #################
-// ALTERAR UN STRING
-// #################
-
-// Repetir un string
-const cadenaPrueba8 = "Riwi "
-console.log(cadenaPrueba8.repeat(2)) // 'Riwi Riwi'
-console.log(cadenaPrueba8.repeat(4)) // 'Riwi Riwi Riwi Riwi'
-
-// limpiar espacios accidentales
-const textoDePrueba2 = "   Este es un mensaje de prueba   "
-console.log(textoDePrueba2.trim()); // "Este es un mensaje de prueba"
-console.log(textoDePrueba2.trimStart()); // "Este es un mensaje de prueba   "
-console.log(textoDePrueba2.trimEnd()); // "   Este es un mensaje de prueba"
-
-// relleno de texto para ajustar un formato especifico
-const textoDePrueba3 = "123"
-console.log(textoDePrueba3.padStart(10, "*")) // '*******123'
-console.log(textoDePrueba3.padStart(8, "*")) // '*****123'
-console.log(textoDePrueba3.padStart(5, "*")) // '**123'
-console.log(textoDePrueba3.padEnd(10, "*")) // '123*******'
-console.log(textoDePrueba3.padEnd(8, "*")) // '123*****'
-console.log(textoDePrueba3.padEnd(5, "*")) // '123**'
