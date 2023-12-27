@@ -53,19 +53,24 @@ console.log(arrayDeExtraccion.includes("z")) // false
 
 // Consultar si un array incluye un elemento desde x posicion
 console.log(arrayDeExtraccion.includes("b")) // true 
-console.log(arrayDeExtraccion.includes("b",2)) // false
+console.log(arrayDeExtraccion.includes("b", 2)) // false
 
 // Consultar si un array incluye un elemento, si lo encuentra lo devuelve el indice y si no retorna un -1
 console.log(arrayDeExtraccion.indexOf("c")) // 2 
 console.log(arrayDeExtraccion.indexOf("z")) // -1
 
 // Lo mismo que el anterior pero desde x posicion
-console.log(arrayDeExtraccion.indexOf("c",3)) // -1 
-console.log(arrayDeExtraccion.indexOf("d",3)) // 3
+console.log(arrayDeExtraccion.indexOf("c", 3)) // -1 
+console.log(arrayDeExtraccion.indexOf("d", 3)) // 3
 
 // Consultar la ultima vez que aparece un elemento en el array
 console.log(arrayDeExtraccion.lastIndexOf("b")) // 4 
-console.log(arrayDeExtraccion.lastIndexOf("b",1)) // 1
+console.log(arrayDeExtraccion.lastIndexOf("b", 1)) // 1
+
+// Desestructuracion de arrays
+const [, segundaPosicion, , cuartaPosicion] = arrayDeExtraccion
+console.log(segundaPosicion) // b
+console.log(cuartaPosicion) // d
 
 // ############################
 // AGREGAR ELEMENTOS A UN ARRAY
@@ -119,9 +124,7 @@ console.log(stringDeArray2) // 'true.1.dos.3'
 
 
 
-// // Conversion de string a array con strings
-// const ArrayLetters = [...(Array.from(textoCadena))]
-// console.log(ArrayLetters)
+
 
 
 
