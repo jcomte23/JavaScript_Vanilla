@@ -36,7 +36,7 @@ persona.saludar() // hola, soy Javier, tengo 25 años y soy un coder
 // CREACION DE OBJETOS EN JS
 // #########################
 const objetoBasico1 = new Object();
-const objetoBasico2={}
+const objetoBasico2 = {}
 
 console.log(objetoBasico1) // {}
 console.log(objetoBasico2) // {}
@@ -128,12 +128,31 @@ const nombreCoder = persona.nombre
 const edadCoder = persona.edad
 console.log(nombreCoder, edadCoder) // "Javier 25"
 
-// Segunda forma (Object destructuring)
+// ##################################
+// DESESTRUCTURACION DE OBJETOS EN JS
+// ##################################
+
+// Forma facil
+const objetoSimple = {
+    id: 1,
+    nombreProducto: "jamon",
+    precio: 12546
+}
+
+const { id, nombreProducto, precio } = objetoSimple
+
+console.log(id) // 1
+console.log(nombreProducto) // jamon
+console.log(precio) // 12546
+
+
+// desestructuracion cambiando el nombre de las variables
 const {
     nombre: nombreExtraido,
     edad: edadExtraido,
     ubicacion: ubicacionCompletaExtraida,
-    ubicacion: { departamento: departamentoExtraido, municipio: municipioExtraido, barrio: barrioExtraido } } = persona
+    ubicacion: { departamento: departamentoExtraido, municipio: municipioExtraido, barrio: barrioExtraido }
+} = persona
 
 console.log(nombreExtraido) // Javier
 console.log(edadExtraido) // 25
@@ -142,12 +161,57 @@ console.log(departamentoExtraido) // Antioquia
 console.log(municipioExtraido) // Bello
 console.log(barrioExtraido) // Espiritu santo
 
+// Desestructurarion de un objeto anidado
+const objetoAnidado = {
+    id: 1,
+    nombreProducto: "jamon",
+    precio: 12546,
+    fabricacion: {
+        año: 1998,
+        lote: 45,
+        ubicacion: {
+            pais: "Colombia",
+            departamento: "Antioquia",
+            ciudad: "medellin",
+            sucursal: {
+                id: "alfa",
+                director: "marco tulio",
+                direccionSucursal: "CR 45 # 45-41"
+            }
+        }
+    }
+}
+
+const { 
+    id: idProducto, 
+    fabricacion: { 
+        año, 
+        ubicacion: { 
+            pais, 
+            departamento, 
+            sucursal, 
+            sucursal: { 
+                director, 
+                direccionSucursal
+            } 
+        } 
+    } 
+} = objetoAnidado
+
+console.log(idProducto) // 1
+console.log(año) // 1998
+console.log(pais) // Colombia
+console.log(departamento) // Antioquia
+console.log(sucursal) // { id: "alfa", director: "marco tulio", direcionSucursal: "CR 45 # 45-41" }
+console.log(director) // marco tulio
+console.log(direccionSucursal) // CR 45 # 45-41
+
 
 // #########################################
 // CONGELAR OBJETOS PARA EVITAR ALTERACIONES
 // #########################################
 
-const objCoder={
+const objCoder = {
     id: 1,
     nombre: "Mario",
     apellido: "Perez"
@@ -172,14 +236,14 @@ console.log(Object.isFrozen(objCoder)) // true
 
 
 // Segunda forma de congelar
-const objCoder2={
+const objCoder2 = {
     id: 2,
     nombre: "Luisa",
     apellido: "Ortiz"
 }
 
 // Este forma modificar los atributos ya establezidos,pero no dejar sumar o eliminar atributos
-Object.seal(objCoder2)   
+Object.seal(objCoder2)
 console.log(Object.isSealed(objCoder2))
 
 // Intento de alteracion
@@ -224,10 +288,10 @@ console.log(Object.keys(player)) // [ 'nombre', 'life', 'limitLife', 'datos' ]
 console.log(Object.values(player)) // [ 'Jcomte', 4, 10, [λ: datos] ]
 
 // Nos convierte el objeto en una matriz
-console.log(Object.entries(player)) 
-// [ 
+console.log(Object.entries(player))
+// [
 //   [ 'nombre', 'Jcomte' ],
 //   [ 'life', 4 ],
 //   [ 'limitLife', 10 ],
-//   [ 'datos', [λ: datos] ] 
+//   [ 'datos', [λ: datos] ]
 // ]
