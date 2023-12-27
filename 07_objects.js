@@ -235,7 +235,7 @@ console.log(Object.isFrozen(persona)) // false
 console.log(Object.isFrozen(objCoder)) // true
 
 
-// Segunda forma de congelar
+// sellar un objeto (alternativa para congelar un objeto)
 const objCoder2 = {
     id: 2,
     nombre: "Luisa",
