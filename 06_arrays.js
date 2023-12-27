@@ -123,11 +123,50 @@ console.log(stringDeArray1) // 'true -> 1 -> dos -> 3'
 console.log(stringDeArray2) // 'true.1.dos.3'
 
 
+// #############################
+// METODOS MAS USADOS CON ARRAYS
+// #############################
 
+const coders = [
+    {
+        id: 1,
+        nombre: "javier",
+        apellido: "combita",
+        cedula: "1096247379"
+    },
+    {
+        id: 2,
+        nombre: "maria fernanda",
+        apellido: "martines",
+        cedula: "27984510"
+    },
+    {
+        id: 3,
+        nombre: "lucas",
+        apellido: "rojas",
+        cedula: "91301583"
+    },
+    {
+        id: 4,
+        nombre: "darwing david",
+        apellido: "mosquera andrade",
+        cedula: "1077478312"
+    }
+]
 
+// Recorrer todo un array de principio a fin
+console.log(coders)
+coders.forEach(element => {
+    element.nombre=element.nombre.toUpperCase()
+})
+console.log(coders)
 
+// recorrer todo un array de principio a fin PERO MAP PUEDE CREAR UN NUEVO ARRAY
+const newArray = coders.map(element => {
+    return `nombre => ${element.nombre.toUpperCase()}`
+})
 
-
+console.log(newArray)
 
 
 
@@ -138,36 +177,6 @@ console.log(stringDeArray2) // 'true.1.dos.3'
 // // ==Metodos de arrays=
 // // ====================
 
-// const coders = [
-//     {
-//         id: 1,
-//         nombre: "javier",
-//         apellido: "combita",
-//         cedula: "1096247379",
-//         // fechaNac: new Date(1998, 4, 23)
-//     },
-//     {
-//         id: 2,
-//         nombre: "maria fernanda",
-//         apellido: "martines",
-//         cedula: "27984510",
-//         // fechaNac: new Date(1998, 4, 23)
-//     },
-//     {
-//         id: 3,
-//         nombre: "lucas",
-//         apellido: "rojas",
-//         cedula: "91301583",
-//         // fechaNac: new Date(1998, 4, 23)
-//     },
-//     {
-//         id: 4,
-//         nombre: "darwing david",
-//         apellido: "mosquera andrade",
-//         cedula: "1077478312",
-//         // fechaNac: new Date(2017, 9, 28)
-//     }
-// ]
 
 // //obtener los indices de una lista
 // for (const key in ejemplo1) {
@@ -184,10 +193,6 @@ console.log(stringDeArray2) // 'true.1.dos.3'
 // //     console.log(`${index.fechaNac.getFullYear()}-${(index.fechaNac.getMonth() + 1).toString().padStart(2, '0')}-${index.fechaNac.getDate().toString().padStart(2, '0')} `)
 // // });
 
-// //recorrer y retornar una nueva lista
-// const nuevaLista = coders.map((index) => {
-
-// })
 
 // console.log(coders);
 // console.log(nuevaLista);
