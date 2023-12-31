@@ -178,8 +178,6 @@ console.log(newArray)
 // //filtrar o buscar un resultado
 // console.log(coders.filter(index => index.cedula === "1096247379"))
 
-// //preguntar si un dato esta dentro de una array
-// console.log(coders.some(index => index.cedula === "1096247379"))
 
 // //ordenar un array
 // console.log(coders.sort((a, b) => a.id - b.id))
