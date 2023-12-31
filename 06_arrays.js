@@ -172,27 +172,6 @@ console.log(newArray)
 
 
 
-// // ====================
-// // ==Metodos de arrays=
-// // ====================
-
-
-// //obtener los indices de una lista
-// for (const key in ejemplo1) {
-//     console.log(key)
-// }
-
-// //obtener los valores de una lista
-// for (const index of ejemplo1) {
-//     console.log(index)
-// }
-
-// //recorrer una lista
-// // coders.forEach(index => {
-// //     console.log(`${index.fechaNac.getFullYear()}-${(index.fechaNac.getMonth() + 1).toString().padStart(2, '0')}-${index.fechaNac.getDate().toString().padStart(2, '0')} `)
-// // });
-
-
 // console.log(coders);
 // console.log(nuevaLista);
 
