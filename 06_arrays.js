@@ -155,19 +155,18 @@ const coders = [
 ]
 
 // Recorrer todo un array de principio a fin
-console.log(coders)
-coders.forEach(element => {
-    element.nombre=element.nombre.toUpperCase()
-})
-console.log(coders)
+coders.forEach(element => element.nombre = element.nombre.toUpperCase())
 
 // recorrer todo un array de principio a fin PERO MAP PUEDE CREAR UN NUEVO ARRAY
-const newArray = coders.map(element => {
-    return `nombre => ${element.nombre.toUpperCase()}`
-})
+const newArray = coders.map(element => `nombre => ${element.nombre.toUpperCase()}`)
 
 console.log(newArray)
-
+// [
+//   'nombre => JAVIER',
+//   'nombre => MARIA FERNANDA',
+//   'nombre => LUCAS',
+//   'nombre => DARWING DAVID'
+// ]
 
 
 
