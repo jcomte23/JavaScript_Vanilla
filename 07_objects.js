@@ -25,12 +25,12 @@ const persona = {
         municipio: "Bello",
         barrio: "Espiritu santo"
     },
-    saludar: function () {
-        console.log(`hola, soy ${this.nombre}, tengo ${this.edad} años y soy un ${this.ocupacion}`)
+    saludar: function() {
+        return `Hola, soy ${this.nombre}, tengo ${this.edad} años y soy un ${this.ocupacion}`;
     }
 }
 
-persona.saludar() // hola, soy Javier, tengo 25 años y soy un coder
+console.log(persona.saludar()) // hola, soy Javier, tengo 25 años y soy un coder
 
 // #########################
 // CREACION DE OBJETOS EN JS
