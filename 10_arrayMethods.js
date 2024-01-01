@@ -105,5 +105,23 @@ console.log(totalPrecioProductosDinamica) // 5.75
 let productosDeBajoPrecio = productos.filter(producto => producto.precio < 1)
 console.log(productosDeBajoPrecio)
 
+// ##############################
+// BUSCAR UN ELEMENTO EN UN ARRAY
+// ##############################
 
+// ambos retornar la primer coincidencia por lo tanto es mejor buscar por un ID unico
+
+// buscar de forma manual
+let productoEncontrado = ''
+productos.forEach((producto,index) => {
+    if (producto.nombre==="Arroz") {
+        productoEncontrado=productos[index]
+    }
+})
+
+productoEncontrado // { nombre: 'Arroz', precio: 0.75, categoria: 'Granos' }
+
+// buscar de forma dinamica
+productoEncontrado=productos.find(producto=>producto.nombre==="Pan")
+console.log(productoEncontrado) // { nombre: 'Pan', precio: 1, categoria: 'Panadería' }
 
