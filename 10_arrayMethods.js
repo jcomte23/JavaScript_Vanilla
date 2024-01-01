@@ -113,15 +113,26 @@ console.log(productosDeBajoPrecio)
 
 // buscar de forma manual
 let productoEncontrado = ''
-productos.forEach((producto,index) => {
-    if (producto.nombre==="Arroz") {
-        productoEncontrado=productos[index]
+productos.forEach((producto, index) => {
+    if (producto.nombre === "Arroz") {
+        productoEncontrado = productos[index]
     }
 })
 
 productoEncontrado // { nombre: 'Arroz', precio: 0.75, categoria: 'Granos' }
 
 // buscar de forma dinamica
-productoEncontrado=productos.find(producto=>producto.nombre==="Pan")
+productoEncontrado = productos.find(producto => producto.nombre === "Pan")
 console.log(productoEncontrado) // { nombre: 'Pan', precio: 1, categoria: 'Panadería' }
 
+// ###################################
+// VALIDAR UN ARRAY DE PRINCIPIO A FIN
+// ###################################
+
+// verificar que todos los elementos de un array cumpla una condicion
+
+const verificacion1 = productos.every(producto => producto.precio <= 2)
+console.log(verificacion1) // true
+
+const verificacion2 = productos.every(producto => producto.precio === 2)
+console.log(verificacion2) // false
