@@ -39,7 +39,7 @@ console.log(arrayPeroConTodoEnMinuscula) // [ 'j', 'a', 'v', 'i', 'e', 'r' ]
 const arrayDeExtraccion = ["a", "b", "c", "d", "b"]
 
 // tamaño del array
-console.log(arrayDeExtraccion.length) // 4
+console.log(arrayDeExtraccion.length) // 5
 
 // Obtener un dato del array
 console.log(`posicion 0 con [] = ${arrayDeExtraccion[0]}`) // posicion 0 con [] = a
